@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare - AI Mental Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <header>
+        <div class="container hero">
+            <h1>MindCare</h1>
+            <p>Your AI-powered, confidential, and empathetic mental wellness companion.</p>
+            <a href="#auth" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Login / Signup -->
+    <section id="auth">
+        <div class="container auth-container">
+            <h2>Login / Signup</h2>
+            <form id="authForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard">
+        <div class="container">
+            <h2>Dashboard</h2>
+            <p>Track your mood, chat with AI, write your journal, and discover music & movies.</p>
+
+            <div class="card-container">
+
+                <!-- Mood Tracker -->
+                <div class="card">
+                    <h3>Mood Tracker</h3>
+                    <select id="moodSelect">
+                        <option>😊 Happy</option>
+                        <option>😐 Neutral</option>
+                        <option>😔 Sad</option>
+                        <option>😟 Anxious</option>
+                    </select>
+                    <button id="trackMood">Track Mood</button>
+                    <p id="moodOutput">Your mood history will appear here.</p>
+                </div>
+
+                <!-- AI Chat -->
+                <div class="card">
+                    <h3>AI Chat</h3>
+                    <div class="chat-box" id="chatBox">
+                        <p class="bot-msg">Hello! How are you feeling today?</p>
+                    </div>
+                    <input type="text" id="chatInput" placeholder="Type your message...">
+                    <button id="sendMsg">Send</button>
+                </div>
+
+                <!-- Daily Journal -->
+                <div class="card">
+                    <h3>Daily Journal</h3>
+                    <textarea id="journalInput" placeholder="Write your thoughts..."></textarea>
+                    <button id="saveJournal">Save Entry</button>
+                    <p id="journalOutput">Your saved entries will appear here.</p>
+                </div>
+
+                <!-- Music & Movies -->
+                <div class="card">
+                    <h3>Music & Movies</h3>
+                    <button id="getEntertainment">Show Recommendations</button>
+                    <p id="entertainmentOutput">Your recommendations will appear here.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
